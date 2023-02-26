@@ -1,9 +1,13 @@
-## mv Unix v6: the original source of the famous warning *values of β will give rise to dom!*
+
+## The famous warning from Unix v6 mv.c: *`values of β will give rise to dom!`*
 
 As some people know in Unix v6 mv.c could issue a strange error message. Dennis
 Ritchie [wrote about it himself](https://www.bell-labs.com/usr/dmr/www/odd.html)
-(as well as some other fun things in Unix like the famous comment *`/\* You are
-not expected to understand this \*/`* and a funny story about `a.out`).
+as well as some other fun things in Unix like the famous comment:
+
+	/* You are not expected to understand this */
+
+and a funny story about `a.out`.
 
 If you look at the `origin/Research-V6-Snapshot-Development` branch of the [Unix
 History Repository](https://github.com/dspinellis/unix-history-repo) you will
