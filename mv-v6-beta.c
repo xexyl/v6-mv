@@ -114,11 +114,15 @@ if(S_ISDIR(stbuf[0].st_mode)){
 		}
 		if(stat(argp4, &stbuf[2]) >= 0){
 		    /*
+		     * This won't compile under modern systems and I'm too lazy
+		     * to fix it. -- @xexyl
+		     */
+		    #if 0
 			if((stbuf[0]==stbuf[2]) && (stbuf[1]==stbuf[3])){
 				write(1,"Files are identical.\n",21);
 				exit(1);
 			}
-			*/
+		    #endif
 			if((getuid()&0377) == stbuf[2].st_uid)
 				b = 0200; else
 			if((getgid()&0377) == stbuf[2].st_gid)
